@@ -1,5 +1,3 @@
-console.log("LOve u arjun");
-
 const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne=document.querySelector('#msg-1')
@@ -20,7 +18,7 @@ weatherForm.addEventListener('submit',(e)=>{
         }
         else{
             messageOne.textContent=data.location
-            messageTwo.textContent=data.location
+            messageTwo.textContent=data.forecast.temperature
         }
     })
 })
